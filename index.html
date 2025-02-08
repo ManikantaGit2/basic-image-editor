@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Image Editor</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+    <h2>Basic Image Editor</h2>
+
+    <div class="container">
+        <input type="file" id="imageUpload" accept="image/*">
+        <br>
+        <label>Brightness:</label>
+        <input type="range" id="brightness" min="0" max="200" value="100">
+        
+        <label>Contrast:</label>
+        <input type="range" id="contrast" min="0" max="200" value="100">
+        
+        <label>Grayscale:</label>
+        <input type="range" id="grayscale" min="0" max="100" value="0">
+        
+        <label>Blur:</label>
+        <input type="range" id="blur" min="0" max="10" value="0">
+
+        <br>
+        <button onclick="resetFilters()">Reset</button>
+
+        <canvas id="canvas"></canvas>
+    </div>
+
+   <script src="script.js"></script>
+
+</body>
+</html>
